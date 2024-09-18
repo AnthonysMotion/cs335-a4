@@ -50,7 +50,7 @@
             <input type="text" id="password" placeholder="Password">
             <input type="text" id="address" placeholder="Address">
             <button id="registerButton">Register</button>
-            <p id="errorMessage"></p>
+            <p id="result"></p>
         </div>
 
         <!-- login -->
@@ -82,3 +82,31 @@
     
 </body>
 </html>
+<!-- register user -->
+<script>
+    document.getElementById("registerButton").addEventListener('click', () => {
+        const url = "https://cws.auckland.ac.nz/nzsl/api/Register";
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const address = document.getElementById("address").value;
+        const result = document.getElementById("result");
+
+        result.textContent = '';
+
+        const data = {
+            username: username,
+            password: password,
+            address: address
+        };
+
+        fetch(url, {
+            method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)
+        })
+    });
+</script>
+<!-- load comments -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        getComments();
+    });
+</script>
