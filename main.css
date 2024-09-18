@@ -11,42 +11,26 @@ header {
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
 .section {
     padding: 20px;
     margin: 20px;
 }
 
-input, button, textarea {
-    margin: 10px 0;
-    padding: 10px;
-    width: 100%;
-    max-width: 400px;
+/* nav */
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-@media screen and (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+.nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
 
-    .section {
-        padding: 10px;
-    }
+.nav ul li a {
+    color: white;
+    text-decoration: none;
 }
 
 /* home section */
@@ -78,6 +62,13 @@ input, button, textarea {
     display: block;
     background-color: #dbdbdb;
     margin: 0;
+}
+
+#nzsl input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .sign-item {
