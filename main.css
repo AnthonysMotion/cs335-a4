@@ -114,6 +114,12 @@ input, button, textarea {
     width: 25%;
     display: inline-block;
     border-radius: 15px;
+    transition: .3s ease;
+}
+
+#eventList li:hover {
+    transform: scale(1.05);
+    transition: .3s ease;
 }
 
 /* footer */
