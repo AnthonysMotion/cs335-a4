@@ -211,6 +211,52 @@ document.addEventListener('DOMContentLoaded', () => {
     getComments();
 });
 
+/*
+document.getElementById('registerButton').addEventListener('click', () => {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const address = document.getElementById('address').value;
+
+    const errorMessageContainer = document.getElementById('errorMessage');
+
+    errorMessageContainer.textContent = '';
+
+    if (!username || !password || !address) {
+        errorMessageContainer.textContent = 'Please fill in all fields';
+        return;
+    }
+
+    const data = {
+        username: username,
+        password: password,
+        address: address
+    };
+
+    fetch('https://cws.auckland.ac.nz/nzsl/api/register', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => {
+        if (!response.ok) {
+            return response.json().then(err => {
+                throw new Error(err.message || 'Registration failed');
+            });
+        }
+        return response.json();
+    })
+    .then(result => {
+        console.log('Success:', result);
+        alert('Registration successful');
+    })
+    .catch(error => {
+        errorMessageContainer.textContent = error.message;
+    });
+});
+ */
+
 window.onload(
     getVersion(), 
     getLogo(),
