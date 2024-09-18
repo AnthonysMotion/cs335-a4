@@ -175,6 +175,10 @@ const formatDate = (vcalDate) => {
     });
 };
 
+// register
+
+
+
 // comments
 
 const getComments = () => {
