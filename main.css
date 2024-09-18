@@ -136,6 +136,15 @@ input, button, textarea {
     align-items: center;
 }
 
+#commentsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+    width: 100%;
+}
 
 
 
