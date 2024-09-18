@@ -11,11 +11,22 @@ const getVersion = () => {
 
 const getLogo = () => {
     const url = "https://cws.auckland.ac.nz/nzsl/api/Logo";
-    fetch(url).then((response) => response.blob()).then((imageBlob) => {
-        const imageUrl = URL.createObjectURL(imageBlob);
-        document.getElementById("logo").src = imageUrl;
-    });
-}
+    fetch(url)
+        .then(response => response.blob())
+        .then(imageBlob => {
+            const imageUrl = URL.createObjectURL(imageBlob);
+
+            const logoImg = document.getElementById("logo");
+            if (logoImg) {
+                logoImg.src = imageUrl;
+            }
+
+            const newFaviconLink = document.createElement('link');
+            newFaviconLink.rel = 'icon';
+            newFaviconLink.href = imageUrl;
+            document.head.appendChild(newFaviconLink);
+        });
+};
 
 // signs
 
