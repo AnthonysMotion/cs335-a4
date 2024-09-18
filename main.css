@@ -151,13 +151,18 @@ input, button, textarea {
     text-align: center;
 }
 
-
 #commentsList li {
     flex: 1 1 calc(33% - 1rem);
     box-sizing: border-box;
     padding: 0.5%;
     border-radius: 0.5rem;
     background-color: #dbdbdb;
+    transition: .3s ease;
+}
+
+#commentsList li:hover {
+    transform: scale(1.03);
+    transition: .3s ease;
 }
 
 /* footer */
