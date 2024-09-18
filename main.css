@@ -130,10 +130,6 @@ input, button, textarea {
 
 /* guestbook */
 
-#guestbook {
-    background-color: #dbdbdb;
-}
-
 #guestbook h2 {
     text-align: center;
 }
