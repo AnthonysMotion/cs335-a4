@@ -16,6 +16,11 @@ header {
     margin: 20px;
 }
 
+input {
+    border-radius: 15px;
+    border: 1px solid #757575;
+}
+
 /* nav */
 
 .nav ul {
@@ -31,6 +36,15 @@ header {
 .nav ul li a {
     color: white;
     text-decoration: none;
+    transition: .3s ease;
+}
+
+.nav ul li a:hover {
+    font-weight: bold;
+    transition: .3s ease;
+    background-color: #4b4b4b;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 /* home section */
