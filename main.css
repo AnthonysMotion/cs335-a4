@@ -164,6 +164,7 @@ header {
     align-items: center;
     text-align: center;
     margin: 0 auto;
+    background-color: #dbdbdb;
 }
 
 #register input {
@@ -175,6 +176,7 @@ header {
 
 #register button {
     padding: 4px;
+    margin: 10px;
 }
 
 /* footer */
