@@ -156,6 +156,20 @@ header {
     transition: .3s ease;
 }
 
+/* register */
+
+#register {
+    text-align: center;
+    display: block;
+}
+
+#register input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
 /* footer */
 
 footer {
