@@ -155,7 +155,7 @@ input, button, textarea {
 #commentsList li {
     flex: 1 1 calc(33% - 1rem);
     box-sizing: border-box;
-    padding: 0.5rem;
+    padding: 0.5%;
     border: 1px solid #ddd;
     border-radius: 0.5rem;
 }
