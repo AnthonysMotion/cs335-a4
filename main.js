@@ -164,6 +164,38 @@ const formatDate = (vcalDate) => {
     });
 };
 
+// comments
+
+const getComments = () => {
+    const commentsUrl = "https://cws.auckland.ac.nz/nzsl/api/Comments";
+    const commentsList = document.getElementById('commentsList');
+
+    fetch(commentsUrl)
+        .then(response => response.text())
+        .then(html => {
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = html;
+
+            const commentElements = tempDiv.querySelectorAll('p');
+            
+            commentsList.innerHTML = '';
+
+            commentElements.forEach(commentElement => {
+                const commentText = commentElement.innerHTML;
+
+                const listItem = document.createElement('li');
+                listItem.innerHTML = commentText;
+                listItem.style.color = 'black';
+
+                commentsList.appendChild(listItem);
+            });
+        });
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    getComments();
+});
+
 window.onload(
     getVersion(), 
     getLogo(),
