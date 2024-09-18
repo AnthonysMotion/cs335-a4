@@ -207,6 +207,7 @@ header {
 #register button:hover {
     transform: scale(1.05);
     transition: .3s ease;
+    background-color: #dbdbdb;
 }
 
 /* login */
@@ -229,6 +230,15 @@ header {
 #login button {
     margin: 10px 0;
     padding: 10px;
+    transition: .3s ease;
+    background-color: white;
+    border: 1px solid #333;
+}
+
+#login button:hover {
+    transform: scale(1.05);
+    transition: .3s ease;
+    background-color: #dbdbdb;
 }
 
 /* footer */
