@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.section {
+    padding: 20px;
+    margin: 20px;
+}
+
+input, button, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .section {
+        padding: 10px;
+    }
+}
+
+/* home section */
+
+#home {
+    text-align: center;
+    display: block;
+    
+}
+
+#logo {
+    max-width: 6%;
+}
+
+#home h1 {
+    font-size: 50px;
+    margin: 15px;
+}
+
+#home p {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* nzsl section */
+
+#nzsl {
+    text-align: center;
+    display: block;
+    background-color: #dbdbdb;
+    margin: 0;
+}
+
+.sign-item {
+    display: inline-block;
+}
+
+.sign-item img {
+    max-width: 50%;
+    border: 15px solid white;
+    border-radius: 15px;
+}
+
+/* events section */
+
+#events {
+    text-align: center;
+    display: block;
+    margin: 0;
+}
+
+#eventList {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#eventList li {
+    background-color: #dbdbdb;
+    margin: 25px;
+    padding: 15px;
+    width: 25%;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+/* footer */
+
+footer {
+    background-color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    color: white;
+}
