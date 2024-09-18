@@ -130,6 +130,10 @@ input, button, textarea {
 
 /* guestbook */
 
+#guestbook h2 {
+    text-align: center;
+}
+
 #commentsSection {
     display: flex;
     flex-direction: column;
@@ -154,7 +158,6 @@ input, button, textarea {
     padding: 0.5rem;
     border: 1px solid #ddd;
     border-radius: 0.5rem;
-    background-color: #f9f9f9;
 }
 
 /* footer */
