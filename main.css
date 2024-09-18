@@ -173,6 +173,10 @@ header {
     max-width: 400px;
 }
 
+#register button {
+    padding: 4px;
+}
+
 /* footer */
 
 footer {
