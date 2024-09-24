@@ -148,11 +148,37 @@ const displayEvent = (eventDetails) => {
         <p>${eventDetails.description}</p>
         <p>Date: ${formatDate(eventDetails.start)} - ${formatDate(eventDetails.end)}</p>
         <p>Location: ${eventDetails.location}</p>
-        
     `;
     
+    listItem.addEventListener('click', () => downloadICal(eventDetails));
+
     eventList.appendChild(listItem);
 };
+
+const downloadICal = (eventDetails) => {
+    const icsContent = `BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+SUMMARY:${eventDetails.summary}
+DESCRIPTION:${eventDetails.description}
+DTSTART:${eventDetails.start}
+DTEND:${eventDetails.end}
+LOCATION:${eventDetails.location}
+END:VEVENT
+END:VCALENDAR`;
+
+    const blob = new Blob([icsContent], { type: 'text/calendar' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${eventDetails.summary.replace(/\s+/g, '_')}.ics`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+};
+
 
 const formatDate = (vcalDate) => {
     const year = vcalDate.slice(0, 4);
@@ -200,12 +226,13 @@ const getComments = () => {
 
                 const listItem = document.createElement('li');
                 listItem.innerHTML = commentText;
-                listItem.style.color = 'black';
 
                 commentsList.appendChild(listItem);
             });
         });
 };
+
+// login
 
 window.onload(
     getVersion(), 

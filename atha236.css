@@ -1,5 +1,7 @@
 html {
     scroll-behavior: smooth;
+    background-color: #ebf2fa;
+    color: #2e2c2f;
   }
 
 body {
@@ -9,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #2e2c2f;
     color: white;
     padding: 10px;
     text-align: center;
@@ -22,11 +24,12 @@ header {
 
 input {
     border-radius: 15px;
-    border: 1px solid #757575;
+    border: none;
 }
 
 button {
     border-radius: 15px;
+    cursor: pointer;
 }
 
 /* nav */
@@ -50,7 +53,7 @@ button {
 .nav ul li a:hover {
     font-weight: bold;
     transition: .3s ease;
-    background-color: #4b4b4b;
+    background-color: #8380b6;
     border-radius: 15px;
     padding: 10px;
 }
@@ -65,6 +68,7 @@ button {
 
 #logo {
     max-width: 6%;
+    filter: brightness(0) saturate(100%) invert(46%) sepia(20%) saturate(600%) hue-rotate(216deg) brightness(100%) contrast(91%);
 }
 
 #home h1 {
@@ -82,8 +86,9 @@ button {
 #nzsl {
     text-align: center;
     display: block;
-    background-color: #dbdbdb;
+    background-color: #2e2c2f;
     margin: 0;
+    color: #ebf2fa;
 }
 
 #nzsl input {
@@ -127,7 +132,8 @@ button {
 }
 
 #eventList li {
-    background-color: #dbdbdb;
+    background-color: #2e2c2f;
+    color: #ebf2fa;
     margin: 25px;
     padding: 15px;
     width: 25%;
@@ -137,8 +143,10 @@ button {
 }
 
 #eventList li:hover {
+    background-color: #8380b6;
     transform: scale(1.05);
     transition: .3s ease;
+    cursor: pointer;
 }
 
 /* guestbook */
@@ -169,13 +177,15 @@ button {
     box-sizing: border-box;
     padding: 0.5%;
     border-radius: 0.5rem;
-    background-color: #dbdbdb;
+    background-color: #2e2c2f;
     transition: .3s ease;
+    color: #ebf2fa;
 }
 
 #commentsList li:hover {
     transform: scale(1.03);
     transition: .3s ease;
+    background-color: #8380b6;
 }
 
 #createComment {
@@ -198,6 +208,16 @@ button {
 #createComment button {
     margin: 10px 0;
     padding: 10px;
+    border: none;
+    background-color: #2e2c2f;
+    color: #ebf2fa;
+    transition: .3s ease;
+}
+
+#createComment button:hover {
+    background-color: #8380b6;
+    transform: scale(1.05);
+    transition: .3s ease;
 }
 
 /* register */
@@ -208,7 +228,8 @@ button {
     align-items: center;
     text-align: center;
     margin: 0 auto;
-    background-color: #dbdbdb;
+    color: #ebf2fa;
+    background-color: #2e2c2f;
 }
 
 #register input {
@@ -216,20 +237,22 @@ button {
     padding: 10px;
     width: 100%;
     max-width: 400px;
+    background-color: #ebf2fa;
+    border: none;
 }
 
 #register button {
     margin: 10px 0;
     padding: 10px;
     transition: .3s ease;
-    background-color: white;
-    border: 1px solid #333;
+    background-color: #ebf2fa;
+    border: none;
 }
 
 #register button:hover {
     transform: scale(1.05);
     transition: .3s ease;
-    background-color: #dbdbdb;
+    background-color: #8380b6;
 }
 
 /* login */
@@ -253,22 +276,23 @@ button {
     margin: 10px 0;
     padding: 10px;
     transition: .3s ease;
-    background-color: white;
-    border: 1px solid #333;
+    background-color: #2e2c2f;
+    border: none;
+    color: #ebf2fa;
 }
 
 #login button:hover {
     transform: scale(1.05);
     transition: .3s ease;
-    background-color: #dbdbdb;
+    background-color: #8380b6;
 }
 
 /* footer */
 
 footer {
-    background-color: #333;
+    background-color: #2e2c2f;
     text-align: center;
     margin: 0;
     padding: 10px;
-    color: white;
+    color: #ebf2fa;
 }
